@@ -642,3 +642,49 @@ for(let i=10; i>0; i++){
 // 	return wordsExLast.join(', ') + ' and ' + lastWord;
 //   }             list(['C', 'C++', 'Python', 'PHP'])qaytaradi 'C, C++, Python and PHP'.
 
+
+// function divisorSum(n)
+// {
+//     let sum = 0;
+ 
+//     for (let i = 1; i <= n; ++i)
+//     {
+ 
+//         // Find all divisors of i
+//         // and add them
+//         for (let j = 1; j * j <= i; ++j)
+//         {
+//             if (i % j == 0)
+//             {
+//                 if (i / j == j)
+//                     sum += j;
+//                 else
+//                     sum += j + i / j;
+//             }
+//         }
+//     }
+//     return sum;
+// }
+ 
+// // Driver code
+// let n = 4;
+// document.write(divisorSum(n) + "<br>");
+// n = 5;
+// document.write(divisorSum(n) + "<br>");
+
+
+// program to display the sum of natural numbers
+
+// take input from the user
+// const number = parseInt(prompt('Enter a positive integer: '));
+
+// let sum = 0;
+
+// // looping from i = 1 to number
+// // in each iteration, i is increased by 1
+// for (let i = 1; i <= number; i++) {
+//     sum += i;
+// }
+
+// console.log('The sum of natural numbers:', sum);
+
