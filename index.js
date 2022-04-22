@@ -688,3 +688,86 @@ for(let i=10; i>0; i++){
 
 // console.log('The sum of natural numbers:', sum);
 
+
+// function addtion (){
+// 	let x = prompt("x=");
+// 	let y = prompt("y=");
+// 	console.log(x + y)
+// 	return;
+// }
+
+// addtion()
+
+// function addtion(){
+// 	let x=prompt("x=");
+// 	let y=prompt("y=");
+
+// 	if(x>y){
+// 		console.log(x)
+// 	}
+// 	else if (x===y){
+// 		console.log("Bu sonlar o'zaro teng")
+// 	}
+// 	else{
+// 		console.log(y)
+// 	}
+// }
+// addtion()
+
+// function show(){
+// 	var x=prompt("x=");
+// 	var y=prompt("y=");
+
+// 	console.log(x*y);
+
+// 	return;
+// }
+
+// show()
+
+function tezlik(v,S){
+	return (S/v).toFixed() + 'soat' + (((S/v).toFixed(3)-Math.floor(S/v))*60).toFixed() + 'minut';
+}
+
+select.addEventListener('submit', function(e) {
+	e.preventDefault()
+
+	human.textContent = tezlik(3.6, input.value);
+	velo.textContent = tezlik(20.1, input.value);
+	avto.textContent = tezlik(70, input.value);
+	aircraft.textContent = tezlik(500, input.value);
+})
+
+// function sum(a, b) {
+// 	a = (typeof a !== 'undefined') ? a : 10;
+// 	b = (typeof b !== 'undefined') ? b : 20;
+// 	return a + b;
+//   }
+  
+//   console.log(sum()); // 30
+//   console.log(sum(20)); // 40
+
+//   const odd = [1, 3, 5];
+// const combined = [2, 4, 6, ...odd];
+
+// console.log(combined); // [ 2, 4, 6, 1, 3, 5 ]
+
+// let numbers = [10, 20];
+// let moreNumbers = [30, 40];
+// let allNumbers = [...numbers, ...moreNumbers];
+
+// console.log(allNumbers); // [10, 20, 30, 40]
+
+// const iterable = [10, 20, 30];
+
+// for (const value of iterable) {
+//   console.log(value);
+// }
+
+// // Output
+// 10
+// 20
+// 30
+
+// const num = parseInt('111', 2);
+// console.log(num); // 7
